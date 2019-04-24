@@ -1,0 +1,19 @@
+[
+    {
+    "browserName": "chrome",
+    "version": "latest",
+    "sencha": {
+      "concurrency": 4
+    },
+    "platform": "Windows 10",
+     "tunnelIdentifier": "teamcityTunnel"
+    }/*,
+    {
+    "browserName": "internet explorer",
+    "version": "11",
+    "sencha": {
+      "concurrency": 4
+    },
+    platform": "Windows 10"
+    }*/
+]

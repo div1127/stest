@@ -1,0 +1,33 @@
+{
+    "name": "SDK-Test",
+    "build": {
+        "dir": "${workspace.dir}/build"
+    },
+    "packages": {
+        "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages",
+        "extract": "${workspace.dir}/packages/remote"
+    },
+    "tests": {
+        "path": "test/project.json",
+        "browser": {
+            "farms": [
+                {
+                    "name": "Sauce Labs",
+                    "type": "saucelabs",
+                    "port": 80,
+                    "host": "ondemand.saucelabs.com",
+                    "username": "div1112",
+                    "accessKey": "cca966d9-ba5f-4f6b-a65c-81b70215b4fc",
+                    "pools": [
+                        {
+                            "name": "pool1",
+                            "path": "senchaTest/pools/pool1.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "archiveServers": []
+    }
+}
+
