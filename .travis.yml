@@ -5,4 +5,4 @@ before_script:
   - wget http://52.70.188.225/repos/SenchaTest-2.2.1-linux-x64-no-jre.sh
   - wget http://52.70.188.225/repos/SenchaCmd-6.7.0.63-linux-amd64.sh
   
- script: bash ./script: bash scripts/deploy.sh staging
+ 
