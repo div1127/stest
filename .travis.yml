@@ -9,7 +9,7 @@ before_install:
      - sc-4.5.3-linux/bin/sc -u div1112 -k cca966d9-ba5f-4f6b-a65c-81b70215b4fc & 
      
 install:
-     - npm install -g @sencha/stc@1.0.0
+     - npm install @sencha/stc@1.0.0
 script: npm run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
 
  
