@@ -3,7 +3,7 @@ node_js:
 - '8'
 install: 
      - cd senchaTest
-     - echo $NPM_USER 
+     - echo {NPM_USER} 
      - npm install npm-cli-login
      - npm-cli-login
      - npm install "@sencha/cmd"
