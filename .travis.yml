@@ -1,15 +1,14 @@
 language: node_js
 node_js:
 - '8'
-before_install: 
+install: 
      - cd senchaTest
      - npm install npm-cli-login
+     - npm install @sencha/stc@1.0.0
      - npm-cli-login 
      - wget https://saucelabs.com/downloads/sc-4.5.3-linux.tar.gz; tar -xvzf sc-4.5.3-linux.tar.gz
      - sc-4.5.3-linux/bin/sc -u div1112 -k cca966d9-ba5f-4f6b-a65c-81b70215b4fc & 
-     
-install:
-     - npm install @sencha/stc@1.0.0
+
 script: npm run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
 
  
