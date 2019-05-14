@@ -14,7 +14,7 @@ install:
      - pwd
      - ls node_modules/ | grep -i stc
      - cd senchaTest
-     - ../node_modules/stc-cli-linux-64 run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
+     - stc-cli-linux-64 run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
 
  
 
