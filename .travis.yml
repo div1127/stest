@@ -2,15 +2,8 @@ language: node_js
 node_js:
 - '8'
 install: 
-     - cd senchaTest
-     - echo ${NPM_USER} 
-     - echo ${NPM_USER} > .cred; echo ${NPM_PASS} >> .cred; echo ${NPM_EMAIL} >> .cred
-     - npm login --registry=https://sencha.myget.org/F/commercial-test/npm/ --scope=sencha << push_inputs
-       head -1 .cred
-       head -2 .cred 
-       head -3 .cred
-       push_inputs
-       
+     - travis setup npm
+     - cd senchaTest       
      - npm install @sencha/stc@1.0.0
 
 script: npm run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
