@@ -7,13 +7,7 @@ addons:
     username: "div1112"
     access_key: "cca966d9-ba5f-4f6b-a65c-81b70215b4fc"
 
-install: 
-     - echo ${registry_details} > ~/.npmrc
-     - echo ${strict-ssl-value} >> ~/.npmrc 
-     - npm install @sencha/stc-cli-linux-64@1.0.0
-     - cd senchaTest
-     
-     - ../node_modules/@sencha/stc-cli-linux-64/stc run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
+script: stc_cli/teamcity_stc/stc run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
 
  
 
