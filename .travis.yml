@@ -5,7 +5,7 @@ install:
      - echo ${registry_details} > ~/.npmrc
      - echo ${strict-ssl-value} >> ~/.npmrc 
      - cat ~/.npmrc
-     - npm install @sencha/cmd
+     - npm install @sencha/stc-cli-linux-64@1.0.0
      - cd senchaTest
 
 script: npm run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
