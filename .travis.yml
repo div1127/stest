@@ -13,7 +13,7 @@ install:
      - npm install @sencha/stc-cli-linux-64@1.0.0     
      - cd senchaTest
 
-script: ../node_modules/stc-cli-linux-64 run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
+script: ~/stest/node_modules/stc-cli-linux-64 run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
 
  
 
