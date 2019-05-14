@@ -6,7 +6,10 @@ addons:
   sauce_connect:
     username: "div1112"
     access_key: "cca966d9-ba5f-4f6b-a65c-81b70215b4fc"
-
+    
+before_script:  
+          - cd senchaTest
+          
 script: stc_cli/teamcity_stc/stc run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
 
  
