@@ -10,7 +10,9 @@ addons:
 install: 
      - echo ${registry_details} > ~/.npmrc
      - echo ${strict-ssl-value} >> ~/.npmrc 
-     - npm install @sencha/stc-cli-linux-64@1.0.0     
+     - npm install @sencha/stc-cli-linux-64@1.0.0
+     - pwd
+     - ls -ls node_modules/stc-cli-linux-64
      - cd senchaTest
 
 script: ~/stest/node_modules/stc-cli-linux-64 run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
