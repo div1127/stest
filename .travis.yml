@@ -12,10 +12,9 @@ install:
      - echo ${strict-ssl-value} >> ~/.npmrc 
      - npm install @sencha/stc-cli-linux-64@1.0.0
      - pwd
-     - ls -ls node_modules/stc-cli-linux-64
+     - ls node_modules/ | grep -i stc
      - cd senchaTest
-
-script: ~/stest/node_modules/stc-cli-linux-64 run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
+     - ../node_modules/stc-cli-linux-64 run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
 
  
 
