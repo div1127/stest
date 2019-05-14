@@ -10,7 +10,7 @@ addons:
 before_script:  
           - cd senchaTest
           
-script: stc_cli/teamcity_stc/stc run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
+script: ../stc_cli/teamcity_stc/stc run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
 
  
 
