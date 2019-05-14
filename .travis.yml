@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - '8'
 install: 
-     - travis setup npm
+     - printf "@msencha:registry=https://sencha.myget.org/F/commercial-test/npm/\n//sencha.myget.org/F/commercial-test/npm/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
      - cd senchaTest       
      - npm install @sencha/stc@1.0.0
 
