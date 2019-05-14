@@ -1,0 +1,29 @@
+{
+  "name": "stc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-types": "6.23.0",
+    "babel-traverse": "6.23.1",
+    "babel-generator": "6.24.0",
+    "babylon": "6.16.1",
+    "co": "4.6.0",
+    "node-status": "0.1.6",
+    "properties": "1.2.1",
+    "request": "2.81.0",
+    "uuid": "2.0.1",
+    "xmlbuilder": "4.2.1",
+    "yargs": "7.1.0"
+  },
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-jasmine": "2.1.0",
+    "jasmine-reporters": "2.0.7"
+  }
+}
