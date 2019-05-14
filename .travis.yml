@@ -3,9 +3,10 @@ node_js:
 - '8'
 install: 
      - echo ${registry_details} > ~/.npmrc
-     - echo ${strict-ssl-value} > ~/.npmrc 
+     - echo ${strict-ssl-value} >> ~/.npmrc 
      - cat ~/.npmrc
      - npm install @sencha/cmd
+     - cd senchaTest
 
 script: npm run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
 
