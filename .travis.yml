@@ -1,18 +1,15 @@
 language: node_js
 node_js:
 - '8'
-env:
-    - PATH=${PATH}:/usr/local/lib/node_modules
+
 install: 
      - echo ${registry_details} > ~/.npmrc
      - echo ${strict-ssl-value} >> ~/.npmrc 
-     - cat ~/.npmrc
-     - npm root -g
-     - npm root
-     - npm install -g @sencha/stc-cli-linux-64@1.0.0
+     - npm install @sencha/stc-cli-linux-64@1.0.0
+     - ls node_modules/*
      - cd senchaTest
 
-script: stc run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
+script: ../node_module/stc run -p "saucePool" --scenarioName "Kitchen Sink Regression - Modern"
 
  
 
